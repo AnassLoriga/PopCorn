@@ -37,7 +37,7 @@ class DatabaseService {
       );
     } catch (e) {
       print('Failed to initialize database: $e');
-      return null; // Return null instead of throwing
+      return null;
     }
   }
 

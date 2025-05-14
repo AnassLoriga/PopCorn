@@ -5,7 +5,8 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    namespace = "com.example.popcorn"
+    compileSdk = 35
     ndkVersion = "27.0.12077973"
 
     defaultConfig {
@@ -27,13 +28,13 @@ android {
 
     signingConfigs {
         named("debug") {
-            // Debug signing config is automatically created; customize if needed
+            // Debug signing config is automatically created
         }
     }
 
     buildTypes {
         release {
-            // TODO: Configure proper signing config for release builds
+            // TODO: Configure a proper signing config for release builds
             signingConfig = signingConfigs.getByName("debug")
         }
     }
